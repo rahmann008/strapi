@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "featured_content_hubs",
+  "info": {
+    "singularName": "featured-content-hub",
+    "pluralName": "featured-content-hubs",
+    "displayName": "Featured Content Hub"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content_hub": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::content-hub.content-hub"
+    }
+  }
+}

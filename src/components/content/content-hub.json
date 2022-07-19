@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_content_content_hubs",
+  "info": {
+    "displayName": "Content Hub",
+    "icon": "ankh"
+  },
+  "options": {},
+  "attributes": {
+    "test": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

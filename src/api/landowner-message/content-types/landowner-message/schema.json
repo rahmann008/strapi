@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landowner_messages",
+  "info": {
+    "singularName": "landowner-message",
+    "pluralName": "landowner-messages",
+    "displayName": "Landowner Message",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "contact_number": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "coordinate": {
+      "type": "string"
+    },
+    "floors": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

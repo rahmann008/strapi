@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_test_tests",
+  "info": {
+    "displayName": "test",
+    "icon": "at",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Content": {
+      "displayName": "Content Hub",
+      "type": "component",
+      "repeatable": false,
+      "component": "content.content-hub"
+    }
+  }
+}

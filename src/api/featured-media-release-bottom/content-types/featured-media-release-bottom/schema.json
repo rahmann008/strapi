@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "featured_media_release_bottoms",
+  "info": {
+    "singularName": "featured-media-release-bottom",
+    "pluralName": "featured-media-release-bottoms",
+    "displayName": "Featured Media Release Bottom"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media_release": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::media-release.media-release"
+    }
+  }
+}

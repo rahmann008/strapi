@@ -1,0 +1,37 @@
+{
+  "name": "edotco-api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.1.6",
+    "@strapi/plugin-users-permissions": "4.1.6",
+    "@strapi/strapi": "4.1.6",
+    "better-sqlite3": "^7.4.5",
+    "file-saver": "^2.0.2",
+    "pg": "^8.7.3",
+    "pg-connection-string": "^2.5.0",
+    "pluralize": "^8.0.0",
+    "sqlite3": "5.0.2",
+    "strapi-helper-plugin": "^3.2.5",
+    "strapi-plugin-meilisearch": "^0.6.6"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "158e6835-6741-4bc8-bbb7-868222e1b449"
+  },
+  "engines": {
+    "node": ">=12.x.x <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

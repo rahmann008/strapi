@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content_hubs",
+  "info": {
+    "singularName": "content-hub",
+    "pluralName": "content-hubs",
+    "displayName": "Content Hub",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "Global",
+        "Malaysia",
+        "Bangladesh",
+        "Sri Lanka",
+        "Pakistan",
+        "Cambodia",
+        "Myanmar",
+        "Laos",
+        "Philippines",
+        "Indonesia"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "audio": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Podcast",
+        "Blog",
+        "Event",
+        "Award"
+      ]
+    },
+    "topic": {
+      "type": "enumeration",
+      "enum": [
+        "LIFE@edotco",
+        "Technology",
+        "Innovation",
+        "Sustainability",
+        "Success Stories",
+        "Human Resource"
+      ]
+    },
+    "published_date": {
+      "type": "date"
+    }
+  }
+}

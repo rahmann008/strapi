@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "public_messages",
+  "info": {
+    "singularName": "public-message",
+    "pluralName": "public-messages",
+    "displayName": "Public Message",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "contact_group": {
+      "type": "string"
+    }
+  }
+}
