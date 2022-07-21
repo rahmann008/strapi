@@ -1,5 +1,5 @@
 FROM 530363317344.dkr.ecr.us-east-1.amazonaws.com/test-strapi-base-repo
-RUN mkdir /src/strapi/
+RUN mkdir -p /src/strapi/
 WORKDIR /src/strapi/
 COPY . .
 RUN npm install
