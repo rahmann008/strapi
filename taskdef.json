@@ -1,0 +1,34 @@
+{
+    "executionRoleArn": "arn:aws:iam::530363317344:role/role-for-codepipeline-and-ecs",
+
+    "containerDefinitions": [
+        {
+            "name": "test-cont",
+            "image": "<IMAGE1_NAME>",
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 1337,
+                    "protocol": "tcp",
+                    "containerPort": 1337
+                }
+            ],
+             "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/test-taskdef",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            }
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "networkMode": "awsvpc",
+    "cpu": "512",
+    "memory": "1024",
+    "family": "test-taskdef"
+
+}
