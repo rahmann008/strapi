@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - docker build -f Dockerfile -t test-ecs-image . 
+      - docker run -p 1337:1337 -d test-ecs-image-cont
+      - docker ps
+      - docker images
+      - echo Build completed on `date`
+  post_build:
+    commands:
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 530363317344.dkr.ecr.us-east-1.amazonaws.com/test-ecs-repo
+      - docker tag test-ecs-image 530363317344.dkr.ecr.us-east-1.amazonaws.com/test-ecs-repo
+      - docker push 530363317344.dkr.ecr.us-east-1.amazonaws.com/test-ecs-repo
+      - printf '{"ImageURI":"%s"}' 530363317344.dkr.ecr.us-east-1.amazonaws.com/test-ecs-repo:latest > imageDetail.json
+artifacts:
+  files:
+    - imageDetail.json
+    - taskdef.json
+    - appspec.yaml
